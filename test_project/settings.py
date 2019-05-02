@@ -25,7 +25,7 @@ SECRET_KEY = 't(0c%*1r8dsk5=4d)^btw82=$-a_&ib2sj@=kp*7o-4n$7l-_z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -67,10 +67,6 @@ TEMPLATES = [
         },
     },
 ]
-
-print()
-print(TEMPLATES[0]['DIRS'])
-print()
 
 WSGI_APPLICATION = 'test_project.wsgi.application'
 
